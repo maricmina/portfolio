@@ -1,9 +1,14 @@
+@media screen and (max-width: 1381px) {
+  header {
+    background-position: -180px;
+  }
+}
 @media screen and (max-width: 1322px) {
   header nav ul li a {
     margin-left: 55px;
   }
 }
-@media screen and (max-width: 1174px) {
+@media screen and (max-width: 1184px) {
   header nav ul li a {
     margin-left: 40px;
   }
