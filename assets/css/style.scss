@@ -18,17 +18,6 @@ $bledoZlatna: #f3e1cb;
     align-items: center;
     justify-content: end;
 }
-@keyframes levitate {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-}
 a {
     text-decoration: none;
     color: #fff;

@@ -9,27 +9,13 @@
   font-size: 20px;
   font-weight: 100;
 }
-
-@keyframes levitate {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 a {
   text-decoration: none;
   color: #fff;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 header {
   height: 715px;
   background-image: url("../images/pozadina1.gif");
@@ -88,7 +74,6 @@ header #cover h2 {
   color: #b58240;
   font-weight: 200;
 }
-
 #skew, #skew1 {
   display: inline-block;
   width: 50%;
@@ -97,16 +82,13 @@ header #cover h2 {
   margin-top: -30px;
   background-color: #121212;
 }
-
 #skew {
   float: left;
   transform: skewY(4deg);
 }
-
 #skew1 {
   transform: skewY(-4deg);
 }
-
 main {
   position: relative;
   top: -50px;
