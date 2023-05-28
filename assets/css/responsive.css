@@ -16,6 +16,12 @@
   header #cover h1 {
     font-size: 70px;
   }
+  main #prvi_blok #o-meni-tekst {
+    width: 60%;
+  }
+  main #prvi_blok p {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 1062px) {
   header #logo, header #navigacija {
@@ -33,10 +39,25 @@
   header {
     background-image: url("../images/poz3.gif");
   }
+  main #o-meni #skills {
+    height: 250px;
+  }
 }
 @media screen and (max-width: 911px) {
   header nav ul li a {
     margin-left: 20px;
+  }
+  main #prvi_blok #o-meni-tekst {
+    width: 60%;
+  }
+  main #prvi_blok p {
+    font-size: 16px;
+  }
+  main #prvi_blok #skills {
+    height: 200px;
+  }
+  main #prvi_blok #skills img {
+    width: 250px;
   }
 }
 @media screen and (max-width: 828px) {
@@ -64,6 +85,23 @@
   }
   header #tekst {
     margin-left: -120px;
+  }
+  main #prvi_blok #o-meni span {
+    display: block;
+  }
+  main #prvi_blok #o-meni #tabela {
+    position: relative;
+    top: -50px;
+    margin: 0px auto;
+  }
+  main #prvi_blok #o-meni #tabela p {
+    text-align: center;
+  }
+  main #prvi_blok #o-meni #skills {
+    display: none;
+  }
+  main #prvi_blok #o-meni #o-meni-tekst p {
+    padding: 3px;
   }
 }
 @media screen and (max-width: 570px) {
