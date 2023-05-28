@@ -122,7 +122,7 @@
     border: none;
   }
 }
-@media screen and (max-width: 496px) {
+@media screen and (max-width: 500px) {
   html, body {
     margin: 0px;
     padding: 0px;
@@ -134,6 +134,14 @@
     position: relative;
     left: 8%;
   }
+  main #prvi_blok #o-meni-tekst {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 447px) {
+  main #prvi_blok #o-meni #tabela {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (max-width: 411px) {
   header #navigacija {
@@ -142,8 +150,20 @@
   header #tekst {
     margin-left: -140px;
   }
+  main #prvi_blok h1, main #prvi_blok hr {
+    position: relative;
+    top: -70px;
+  }
+  main #prvi_blok #o-meni #tabela {
+    position: relative;
+    top: -150px;
+  }
+  main #prvi_blok #o-meni-tekst {
+    margin-top: 30px;
+    padding: 1px;
+  }
 }
-@media screen and (max-width: 339px) {
+@media screen and (max-width: 345px) {
   header #logo {
     width: 50%;
   }
@@ -179,5 +199,10 @@
   }
   header #tekst h2 {
     font-size: 16px;
+  }
+  main #prvi_blok #o-meni-tekst {
+    width: 70%;
+    margin-top: 70px;
+    padding: 0px;
   }
 }/*# sourceMappingURL=responsive.css.map */
