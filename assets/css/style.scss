@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Bodoni+Moda:wght@400;500&family=Cormorant+Garamond:wght@300&family=Crimson+Text&family=DM+Serif+Display&family=Figtree:wght@400;600&family=Manrope:wght@400;600&family=Montserrat:wght@400;600&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Bodoni+Moda:wght@400;500&family=Cormorant+Garamond:wght@300&family=Crimson+Text&family=DM+Serif+Display&family=Figtree:wght@400;600&family=Frank+Ruhl+Libre:wght@300&family=Manrope:wght@400;600&family=Montserrat:wght@400;600&family=Playfair+Display&family=Roboto+Slab:wght@300&family=Slabo+27px&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.3em;
+    letter-spacing: 0.03em;
+    font: {
+        family: 'Roboto Slab', serif;
+        size: 20px;
+    }
+}
+$zlatnaBoja: #b58240;
+@mixin pozicija {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+@mixin a {
+    text-decoration: none;
+    color: #fff;
+}
+a {
+    @include a;
+ }
+header {
+    height: 715px;
+    background-image: url('../images/pozadina.gif');
+    padding-top: 30px;
+    #meni {
+        @include pozicija;
+    }
+    img {
+        width: 90px;
+    }
+    #logo, #navigacija {
+         width: 45%;
+    }
+    h1 {
+        font-size: 45px;
+        color: $zlatnaBoja;
+        font-family: 'Bodoni Moda', serif;
+    }
+    nav ul {
+        list-style-type: none;
+        span {
+            color: $zlatnaBoja;
+        }
+        li {
+            display: inline;
+            a {
+                margin-left: 70px;
+            }
+            a:hover {
+                color: $zlatnaBoja;
+                transition: 0.2s;
+            }
+        }
+    }
+    #cover {
+        width: 40%;
+        text-align: left;
+        margin-left: 300px;
+        h1 {
+            color: #fff;
+            font-size: 80px;
+            font-weight: 200;
+            margin-top: 180px;
+        }
+        hr {
+            width: 11%;
+            float: left;
+            border: 1px solid $zlatnaBoja;
+            margin-top: 5px;
+        }
+        h2 {
+            color: $zlatnaBoja;
+            font-weight: 200;
+        }
+      }
+    }
