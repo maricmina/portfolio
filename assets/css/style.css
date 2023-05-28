@@ -7,16 +7,32 @@
   letter-spacing: 0.03em;
   font-family: "Roboto Slab", serif;
   font-size: 20px;
+  font-weight: 100;
 }
 
+@keyframes levitate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 a {
   text-decoration: none;
   color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   height: 715px;
-  background-image: url("../images/pozadina.gif");
+  background-image: url("../images/pozadina1.gif");
   padding-top: 30px;
 }
 header #meni {
@@ -71,4 +87,47 @@ header #cover hr {
 header #cover h2 {
   color: #b58240;
   font-weight: 200;
+}
+
+#skew, #skew1 {
+  display: inline-block;
+  width: 50%;
+  height: 50px;
+  padding-bottom: 80px;
+  margin-top: -30px;
+  background-color: #121212;
+}
+
+#skew {
+  float: left;
+  transform: skewY(4deg);
+}
+
+#skew1 {
+  transform: skewY(-4deg);
+}
+
+main {
+  position: relative;
+  top: -50px;
+  padding-top: 50px;
+  width: 100%;
+  height: 800px;
+  background-color: #121212;
+}
+main #o-meni h1 {
+  padding-top: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+}
+main hr {
+  width: 25%;
+  margin: 15px auto;
+  border: 1px solid #b58240;
+}
+main p {
+  color: #fff;
+  margin: 20px;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
