@@ -1,22 +1,20 @@
-@media screen and (max-width: 1381px) {
-  header {
-    background-position: -180px;
-  }
-}
 @media screen and (max-width: 1322px) {
   header nav ul li a {
     margin-left: 55px;
   }
+  header {
+    background-position: -150px;
+  }
 }
 @media screen and (max-width: 1184px) {
+  header {
+    background-position: -230px;
+  }
   header nav ul li a {
     margin-left: 40px;
   }
   header #cover h1 {
     font-size: 70px;
-  }
-  header {
-    background-image: url("../images/poz3.gif");
   }
 }
 @media screen and (max-width: 1062px) {
@@ -31,6 +29,9 @@
   }
   header #tekst h1, header #tekst h2, header #tekst hr {
     margin-left: -100px;
+  }
+  header {
+    background-image: url("../images/poz3.gif");
   }
 }
 @media screen and (max-width: 911px) {
