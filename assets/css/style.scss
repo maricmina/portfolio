@@ -221,4 +221,13 @@ main {
             }
         }
     }
+
+    #treci_blok {
+        background-color: #121212;
+        width: 100%;
+        height: 500px;
+        h1 {
+            @include h1;
+        }
+    }
 }
