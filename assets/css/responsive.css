@@ -8,6 +8,10 @@
   main #drugi_blok #utisci #grid .utisci_blok p {
     font-size: 15px;
   }
+  main #treci_blok #tooltip img {
+    margin-left: 8%;
+    width: 65%;
+  }
 }
 @media screen and (max-width: 1788px) {
   main #drugi_blok #utisci #grid {
@@ -46,6 +50,9 @@
   main #drugi_blok #utisci #grid .utisci_blok img {
     margin-left: 28%;
   }
+  main #treci_blok {
+    height: 650px;
+  }
 }
 @media screen and (max-width: 1322px) {
   header nav ul li a {
@@ -70,6 +77,16 @@
   }
   main #prvi_blok p {
     font-size: 18px;
+  }
+  main #treci_blok {
+    height: 1200px;
+    background-image: url("../images/ver.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+  }
+  main #treci_blok img {
+    display: none;
   }
 }
 @media screen and (max-width: 1130px) {
@@ -249,6 +266,9 @@
   }
   main #drugi_blok #utisci #grid .utisci_blok h2 {
     margin-top: 50px;
+  }
+  main #treci_blok hr {
+    margin-bottom: 0px;
   }
 }
 @media screen and (max-width: 500px) {

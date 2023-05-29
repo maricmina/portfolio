@@ -1,10 +1,18 @@
 @media screen and (max-width: 2000px) {
-    main #drugi_blok #utisci #grid{
-        width: 60%;
-        .utisci_blok {
-            justify-content: space-evenly;
-            p {
-                font-size: 15px;
+    main {
+        #drugi_blok #utisci #grid{
+            width: 60%;
+            .utisci_blok {
+                justify-content: space-evenly;
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+        #treci_blok #tooltip {
+            img {
+                margin-left: 8%;
+                width: 65%;
             }
         }
     }
@@ -26,25 +34,29 @@
     }
 }
 @media screen and (max-width: 1399px) {
-    main #drugi_blok {
-        height: 1200px;
-        #utisci #grid {
-            grid-template-columns: 40% 40%;
-            position: relative;
-            top: 150px;
-            h2 {
-                font-size: 19px;
+    main {
+        #drugi_blok {
+            height: 1200px;
+            #utisci #grid {
+                grid-template-columns: 40% 40%;
+                position: relative;
+                top: 150px;
+                h2 {
+                    font-size: 19px;
+                }
+                p {
+                    font-size: 15px;
+                }
+                .utisci_blok {
+                    margin-top: 50px;
+                    img {
+                        margin-left: 28%;
+                    } 
+                }
             }
-            p {
-                font-size: 15px;
-            }
-            .utisci_blok {
-                margin-top: 50px;
-                img {
-                    margin-left: 28%;
-                } 
-            }
-
+        }
+        #treci_blok {
+            height: 650px;
         }
     }
 }
@@ -52,7 +64,7 @@
     header nav ul li a {
         margin-left: 55px;
      }
-     header  {
+     header {
         background: {
             position: -150px;
         }
@@ -70,14 +82,27 @@
             font-size: 70px;
         }
     }
-    main #prvi_blok{
-        #o-meni-tekst {
-            width: 60%;
+    main {
+        #prvi_blok{
+            #o-meni-tekst {
+                width: 60%;
+            }
+            p {
+                font-size: 18px;
+            }
         }
-        p {
-            font-size: 18px;
+        #treci_blok {
+            height: 1200px;
+            img {
+                display: none;
+            }
+            background-image: url('../images/ver.gif');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 60%;
         }
     }
+
 }
 @media screen and (max-width: 1130px) {
     main #drugi_blok {
@@ -95,7 +120,7 @@
                     margin-left: 29%;
                 }
              }
-        }
+         }
         }
     }
 @media screen and (max-width: 1062px) {
@@ -272,9 +297,16 @@
             border: none;
         }
     }
-    main #drugi_blok #utisci #grid .utisci_blok{
-        h2 {
-            margin-top: 50px;
+    main {
+        #drugi_blok #utisci #grid .utisci_blok{
+            h2 {
+                margin-top: 50px;
+            }
+        }
+        #treci_blok {
+            hr {
+                margin-bottom: 0px;
+            }
         }
     }
 }
