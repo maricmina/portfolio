@@ -196,21 +196,25 @@ main {
             justify-content: center;
         }
         #utisci {
-        height: 1500px;
-        width: 80%;
+        height: 1000px;
+        width: 100%;
         margin: 0px auto;
         @include pozicija;
             .utisci_blok {
-                margin-bottom: 250px;
+                margin-top: 250px;
                 transition: all 0.4s;
+                p {
+                    font-size: 10px;
+                }
                 h2 {
                     padding: 20px 0px;
                 }
                 img {
-                    margin-left: 100px;
+                    margin-left: 90px;
                     width: 40%;
                     box-shadow: 8px 8px rgba(0, 0, 0, 0.4);
                 }
+
             }
             .utisci_blok:hover {
                 background-color: #121212;

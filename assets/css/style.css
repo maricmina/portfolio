@@ -197,8 +197,8 @@ main #drugi_blok #grid {
   justify-content: center;
 }
 main #drugi_blok #utisci {
-  height: 1500px;
-  width: 80%;
+  height: 1000px;
+  width: 100%;
   margin: 0px auto;
   display: flex;
   flex-direction: row;
@@ -206,14 +206,17 @@ main #drugi_blok #utisci {
   justify-content: center;
 }
 main #drugi_blok #utisci .utisci_blok {
-  margin-bottom: 250px;
+  margin-top: 250px;
   transition: all 0.4s;
+}
+main #drugi_blok #utisci .utisci_blok p {
+  font-size: 10px;
 }
 main #drugi_blok #utisci .utisci_blok h2 {
   padding: 20px 0px;
 }
 main #drugi_blok #utisci .utisci_blok img {
-  margin-left: 100px;
+  margin-left: 90px;
   width: 40%;
   box-shadow: 8px 8px rgba(0, 0, 0, 0.4);
 }

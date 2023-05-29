@@ -1,11 +1,28 @@
-@media screen and (max-width: 1477px) {
-    main #utisci #grid{
-        h2 {
-            font-size: 20px;
+@media screen and (max-width: 2000px) {
+    main #drugi_blok #utisci #grid{
+        width: 60%;
+        .utisci_blok {
+            justify-content: space-evenly;
+            p {
+                font-size: 15px;
+            }
         }
-        p {
-            font-size: 16px;
-        }
+    }
+}
+@media screen and (max-width: 1788px) {
+    main #drugi_blok #utisci #grid {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1570px) {
+    main #drugi_blok #utisci #grid  {
+        width: 80%;
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
     }
 }
 @media screen and (max-width: 1399px) {
@@ -13,6 +30,8 @@
         height: 1200px;
         #utisci #grid {
             grid-template-columns: 40% 40%;
+            position: relative;
+            top: 150px;
             h2 {
                 font-size: 19px;
             }
@@ -20,7 +39,7 @@
                 font-size: 15px;
             }
             .utisci_blok {
-                margin-bottom: 50px;
+                margin-top: 50px;
                 img {
                     margin-left: 28%;
                 } 
@@ -58,17 +77,6 @@
         p {
             font-size: 18px;
         }
-        // #drugi_blok #utisci #grid {
-        //     h2 {
-        //         font-size: 18px;
-        //     }
-        //     p {
-        //         font-size: 14px;
-        //     }
-        //     .utisci_blok #djordje {
-        //         margin-top: 20px;
-        //     }
-        // }
     }
 }
 @media screen and (max-width: 1130px) {
@@ -111,22 +119,12 @@
     main #o-meni #skills {
         height: 250px;
     }
-    // main #drugi_blok #utisci #grid {
-    //     p {
-    //         font-size: 13px;    
-    //     }
-    //     .utisci_blok {
-    //         h2 {
-    //             font-size: 22px;
-    //         }
-    //         p {
-    //             font-size: 16px;
-    //         }
-    //         img {
-    //         margin-left: 100px;
-    //         }
-    //     }
-    // }
+    main #drugi_blok #utisci #grid .utisci_blok {
+        margin: 0px 10px;
+        p {
+            font-size: 16px;
+        }
+    }
 }
 @media screen and (max-width: 911px) {
     header nav ul li a {
@@ -212,9 +210,10 @@
                 #grid {
                     grid-template-columns: 80%;
                     .utisci_blok {
-                        margin-bottom: 0px;
+                        position: relative;
+                        top: 120px;
                         h2 {
-                            font-size: 26px;
+                            font-size: 24px;
                         }
                         p {
                             font-size: 18px;

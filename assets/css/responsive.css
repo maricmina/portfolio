@@ -1,9 +1,28 @@
-@media screen and (max-width: 1477px) {
-  main #utisci #grid h2 {
+@media screen and (max-width: 2000px) {
+  main #drugi_blok #utisci #grid {
+    width: 60%;
+  }
+  main #drugi_blok #utisci #grid .utisci_blok {
+    justify-content: space-evenly;
+  }
+  main #drugi_blok #utisci #grid .utisci_blok p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1788px) {
+  main #drugi_blok #utisci #grid {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1570px) {
+  main #drugi_blok #utisci #grid {
+    width: 80%;
+  }
+  main #drugi_blok #utisci #grid h2 {
     font-size: 20px;
   }
-  main #utisci #grid p {
-    font-size: 16px;
+  main #drugi_blok #utisci #grid p {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 1399px) {
@@ -12,6 +31,8 @@
   }
   main #drugi_blok #utisci #grid {
     grid-template-columns: 40% 40%;
+    position: relative;
+    top: 150px;
   }
   main #drugi_blok #utisci #grid h2 {
     font-size: 19px;
@@ -20,7 +41,7 @@
     font-size: 15px;
   }
   main #drugi_blok #utisci #grid .utisci_blok {
-    margin-bottom: 50px;
+    margin-top: 50px;
   }
   main #drugi_blok #utisci #grid .utisci_blok img {
     margin-left: 28%;
@@ -86,6 +107,12 @@
   }
   main #o-meni #skills {
     height: 250px;
+  }
+  main #drugi_blok #utisci #grid .utisci_blok {
+    margin: 0px 10px;
+  }
+  main #drugi_blok #utisci #grid .utisci_blok p {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 911px) {
@@ -166,10 +193,11 @@
     grid-template-columns: 80%;
   }
   main #drugi_blok #utisci #grid .utisci_blok {
-    margin-bottom: 0px;
+    position: relative;
+    top: 120px;
   }
   main #drugi_blok #utisci #grid .utisci_blok h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
   main #drugi_blok #utisci #grid .utisci_blok p {
     font-size: 18px;
