@@ -17,6 +17,24 @@ $zlatnaBoja: #b58240;
     align-items: center;
     justify-content: end;
 }
+@mixin hr {
+    width: 25%;
+    margin: 15px auto;
+    margin-bottom: 100px;
+    border: 1px solid $zlatnaBoja;
+}
+@mixin h1 {
+    padding-top: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+@mixin pozicija {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 a {
     text-decoration: none;
     color: #fff;
@@ -83,7 +101,7 @@ header {
 #skew, #skew1 {
     display: inline-block;
     width: 50%;
-    height: 50px;
+    height: -10px;
     padding-bottom: 80px;
     margin-top: -30px;
     background-color: #121212;
@@ -100,13 +118,10 @@ main {
     top: -50px;
     padding-top: 50px;
     width: 100%;
-    height: 1000px;
+    height: 800px;
     background-color: #121212;
     hr {
-        width: 25%;
-        margin: 15px auto;
-        margin-bottom: 100px;
-        border: 1px solid $zlatnaBoja;
+        @include hr;
     }
     p {
         color: #fff;
@@ -114,20 +129,14 @@ main {
         font-size: 20px;
     }
     h1{
-        padding-top: 20px;
-        color: #fff;
-        text-align: center;
-        font-size: 40px;
+        @include h1;
     }
     #o-meni {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        overflow-y: hidden;
+        @include pozicija;
         #tabela {
             width: 32%;
             height: 300px;
-            // border-left: 2px solid $zlatnaBoja;
             margin-right: 20px;
             span {
                 color: $zlatnaBoja;
@@ -140,31 +149,72 @@ main {
             float: right;
             width: 40%;
             height: 300px;
-            // border-right: 2px solid $zlatnaBoja;
             img {
                 width: 300px;
                 float: right;
-                filter: grayscale(100%);
-                -webkit-filter: grayscale(100%);
-                transition: 0.4s;
-            }
-            :hover {
-                filter: none;
-                -webkit-filter: grayscale(0);
             }
         }  
     }
     #prvi_blok {
+        padding-bottom: 50px;
         #o-meni-tekst {
             width: 50%;
             border: 2px solid $zlatnaBoja;
             margin: 0px auto;
-            margin-top: 70px;
+            margin-top: 29px;
             padding: 10px;
         }
         p {
             text-align: center;
             line-height: 1.5em;
+        }
+    }
+    #drugi_blok {
+        height: 780px;
+        background-color: #1f1f1f;
+        h1 {
+            @include h1;
+            padding-top: 80px;
+        }
+        hr {
+            @include hr;
+        }
+        h2 {
+            color: $zlatnaBoja;
+            text-align: center;
+            font-size: 24px;
+        }
+        p {
+            font-size: 17px;
+            line-height: 1.5em;
+            text-align: center;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-rows: repeat(4, minmax(300px, auto));
+            justify-content: center;
+        }
+        #utisci {
+        height: 1500px;
+        width: 80%;
+        margin: 0px auto;
+        @include pozicija;
+            .utisci_blok {
+                margin-bottom: 250px;
+                transition: all 0.4s;
+                h2 {
+                    padding: 20px 0px;
+                }
+                img {
+                    margin-left: 100px;
+                    width: 40%;
+                    box-shadow: 8px 8px rgba(0, 0, 0, 0.4);
+                }
+            }
+            .utisci_blok:hover {
+                background-color: #121212;
+            }
         }
     }
 }

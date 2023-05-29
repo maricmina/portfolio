@@ -1,3 +1,31 @@
+@media screen and (max-width: 1477px) {
+  main #utisci #grid h2 {
+    font-size: 20px;
+  }
+  main #utisci #grid p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1399px) {
+  main #drugi_blok {
+    height: 1200px;
+  }
+  main #drugi_blok #utisci #grid {
+    grid-template-columns: 40% 40%;
+  }
+  main #drugi_blok #utisci #grid h2 {
+    font-size: 19px;
+  }
+  main #drugi_blok #utisci #grid p {
+    font-size: 15px;
+  }
+  main #drugi_blok #utisci #grid .utisci_blok {
+    margin-bottom: 50px;
+  }
+  main #drugi_blok #utisci #grid .utisci_blok img {
+    margin-left: 28%;
+  }
+}
 @media screen and (max-width: 1322px) {
   header nav ul li a {
     margin-left: 55px;
@@ -6,7 +34,7 @@
     background-position: -150px;
   }
 }
-@media screen and (max-width: 1184px) {
+@media screen and (max-width: 1199px) {
   header {
     background-position: -230px;
   }
@@ -21,6 +49,23 @@
   }
   main #prvi_blok p {
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 1130px) {
+  main #drugi_blok {
+    height: 1200px;
+  }
+  main #drugi_blok #utisci #grid {
+    grid-template-columns: 40% 40%;
+  }
+  main #drugi_blok #utisci #grid .utisci_blok h2 {
+    font-size: 24px;
+  }
+  main #drugi_blok #utisci #grid .utisci_blok p {
+    font-size: 18px;
+  }
+  main #drugi_blok #utisci #grid .utisci_blok img {
+    margin-left: 29%;
   }
 }
 @media screen and (max-width: 1062px) {
@@ -67,6 +112,15 @@
   header h1 {
     font-size: 40px;
   }
+  main #drugi_blok {
+    height: 1200px;
+  }
+  main #drugi_blok #utisci #grid {
+    grid-template-columns: 40% 40%;
+  }
+  main #drugi_blok #utisci #grid .utisci_blok img {
+    margin-left: 80px;
+  }
 }
 @media screen and (max-width: 803px) {
   header #logo {
@@ -91,7 +145,7 @@
   }
   main #prvi_blok #o-meni #tabela {
     position: relative;
-    top: -50px;
+    top: -20px;
     margin: 0px auto;
   }
   main #prvi_blok #o-meni #tabela p {
@@ -102,6 +156,50 @@
   }
   main #prvi_blok #o-meni #o-meni-tekst p {
     padding: 3px;
+  }
+}
+@media screen and (max-width: 763px) {
+  main #drugi_blok {
+    height: 2200px;
+  }
+  main #drugi_blok #utisci #grid {
+    grid-template-columns: 80%;
+  }
+  main #drugi_blok #utisci #grid .utisci_blok {
+    margin-bottom: 0px;
+  }
+  main #drugi_blok #utisci #grid .utisci_blok h2 {
+    font-size: 26px;
+  }
+  main #drugi_blok #utisci #grid .utisci_blok p {
+    font-size: 18px;
+  }
+  main #drugi_blok #utisci #grid .utisci_blok img {
+    margin-left: 30%;
+  }
+  main #prvi_blok h1, main #prvi_blok hr, main #prvi_blok #o-meni #tabela {
+    position: relative;
+    top: -2px;
+  }
+  main #prvi_blok #o-meni-tekst {
+    padding: 0px;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 693px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  main #prvi_blok #tabela {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  main #prvi_blok #tabela #prvi_deo {
+    float: left;
+  }
+  main #prvi_blok hr {
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 570px) {
@@ -121,6 +219,9 @@
   header #tekst hr {
     border: none;
   }
+  main #drugi_blok #utisci #grid .utisci_blok h2 {
+    margin-top: 50px;
+  }
 }
 @media screen and (max-width: 500px) {
   html, body {
@@ -135,7 +236,7 @@
     left: 8%;
   }
   main #prvi_blok #o-meni-tekst {
-    margin-top: 100px;
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 447px) {
@@ -150,31 +251,35 @@
   header #tekst {
     margin-left: -140px;
   }
+  main #prvi_blok {
+    padding-bottom: 0px;
+  }
   main #prvi_blok h1, main #prvi_blok hr {
     position: relative;
-    top: -70px;
-  }
-  main #prvi_blok #o-meni #tabela {
-    position: relative;
-    top: -150px;
+    top: -20px;
   }
   main #prvi_blok #o-meni-tekst {
-    margin-top: 30px;
-    padding: 1px;
+    position: relative;
+    bottom: 40px;
   }
 }
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 351px) {
   header #logo {
     width: 50%;
+    margin-left: 120px;
+    margin-bottom: 150px;
   }
   header #logo h1 {
     font-size: 40px;
   }
   header #navigacija {
+    position: relative;
+    top: 70px;
+    right: 110px;
     width: 40%;
   }
   header #navigacija nav ul li a {
-    font-size: 18px;
+    font-size: 17px;
   }
   header nav ul li, #meni, #logo, #navigacija {
     display: flex;
@@ -191,18 +296,16 @@
   }
   header #tekst {
     margin-left: -160px;
-    margin-top: -80px;
+    margin-top: -50px;
   }
   header #tekst h1 {
-    font-size: 45px;
+    font-size: 50px;
     text-align: center;
   }
   header #tekst h2 {
     font-size: 16px;
   }
   main #prvi_blok #o-meni-tekst {
-    width: 70%;
-    margin-top: 70px;
-    padding: 0px;
+    width: 95%;
   }
 }/*# sourceMappingURL=responsive.css.map */

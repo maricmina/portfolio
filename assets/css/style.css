@@ -26,8 +26,9 @@ header {
 }
 header #meni {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 }
 header img {
   width: 90px;
@@ -81,7 +82,7 @@ header #cover h2 {
 #skew, #skew1 {
   display: inline-block;
   width: 50%;
-  height: 50px;
+  height: -10px;
   padding-bottom: 80px;
   margin-top: -30px;
   background-color: #121212;
@@ -101,7 +102,7 @@ main {
   top: -50px;
   padding-top: 50px;
   width: 100%;
-  height: 1000px;
+  height: 800px;
   background-color: #121212;
 }
 main hr {
@@ -116,12 +117,13 @@ main p {
   font-size: 20px;
 }
 main h1 {
-  padding-top: 20px;
+  padding-top: 10px;
   color: #fff;
   text-align: center;
   font-size: 40px;
 }
 main #o-meni {
+  overflow-y: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -146,22 +148,75 @@ main #o-meni #skills {
 main #o-meni #skills img {
   width: 300px;
   float: right;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  transition: 0.4s;
 }
-main #o-meni #skills :hover {
-  filter: none;
-  -webkit-filter: grayscale(0);
+main #prvi_blok {
+  padding-bottom: 50px;
 }
 main #prvi_blok #o-meni-tekst {
   width: 50%;
   border: 2px solid #b58240;
   margin: 0px auto;
-  margin-top: 70px;
+  margin-top: 29px;
   padding: 10px;
 }
 main #prvi_blok p {
   text-align: center;
   line-height: 1.5em;
+}
+main #drugi_blok {
+  height: 780px;
+  background-color: #1f1f1f;
+}
+main #drugi_blok h1 {
+  padding-top: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 80px;
+}
+main #drugi_blok hr {
+  width: 25%;
+  margin: 15px auto;
+  margin-bottom: 100px;
+  border: 1px solid #b58240;
+}
+main #drugi_blok h2 {
+  color: #b58240;
+  text-align: center;
+  font-size: 24px;
+}
+main #drugi_blok p {
+  font-size: 17px;
+  line-height: 1.5em;
+  text-align: center;
+}
+main #drugi_blok #grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(4, minmax(300px, auto));
+  justify-content: center;
+}
+main #drugi_blok #utisci {
+  height: 1500px;
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main #drugi_blok #utisci .utisci_blok {
+  margin-bottom: 250px;
+  transition: all 0.4s;
+}
+main #drugi_blok #utisci .utisci_blok h2 {
+  padding: 20px 0px;
+}
+main #drugi_blok #utisci .utisci_blok img {
+  margin-left: 100px;
+  width: 40%;
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.4);
+}
+main #drugi_blok #utisci .utisci_blok:hover {
+  background-color: #121212;
 }/*# sourceMappingURL=style.css.map */
