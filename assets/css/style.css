@@ -10,11 +10,6 @@
   font-weight: 100;
 }
 
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -23,8 +18,13 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 header {
-  height: 715px;
+  height: 755px;
   background-image: url("../images/pozadina1.gif");
   padding-top: 30px;
 }
@@ -229,7 +229,6 @@ main #drugi_blok #utisci .utisci_blok:hover {
 }
 main #treci_blok {
   background-color: #121212;
-  width: 100%;
   height: 750px;
 }
 main #treci_blok h1 {
@@ -251,4 +250,105 @@ main #treci_blok img {
   left: 10%;
   transition: 2s;
   animation: 2s;
+}
+main #treci_blok button {
+  width: 200px;
+  height: 50px;
+  background-color: #b58240;
+  border: 1px solid #b58240;
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  top: 25%;
+  right: 37%;
+  transition: 0.4s;
+}
+main #treci_blok button:hover {
+  background-color: #f0aa4f;
+  cursor: pointer;
+}
+main #cetvrti_blok {
+  height: 750px;
+  background-color: #1f1f1f;
+}
+main #cetvrti_blok h1 {
+  padding-top: 80px;
+}
+main #cetvrti_blok #kontakt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+main #cetvrti_blok #kontakt #info, main #cetvrti_blok #kontakt #forma {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #cetvrti_blok #kontakt #info .info {
+  height: 110px;
+  text-align: center;
+  color: #fff;
+}
+main #cetvrti_blok #kontakt #info .info i {
+  color: #b58240;
+  font-size: 30px;
+  padding: 20px;
+}
+main #cetvrti_blok #kontakt #forma {
+  width: 40%;
+}
+main #cetvrti_blok #kontakt #forma input, main #cetvrti_blok #kontakt #forma textarea {
+  border: none;
+  margin: 10px 0px;
+  padding: 5px;
+  border-bottom: 2px solid #b58240;
+  background-color: transparent;
+  width: 70%;
+  box-sizing: border-box;
+  transition: 0.4s;
+}
+main #cetvrti_blok #kontakt #forma input:hover, main #cetvrti_blok #kontakt #forma textarea:hover {
+  border-bottom: 2px solid #f0aa4f;
+}
+main #cetvrti_blok #kontakt #forma #imeiprezime {
+  width: 70%;
+  box-sizing: border-box;
+}
+main #cetvrti_blok #kontakt #forma #imeiprezime input {
+  width: 49%;
+}
+main #cetvrti_blok #kontakt #forma button {
+  width: 35%;
+  background-color: #b58240;
+  border: none;
+  color: #fff;
+  margin-top: 10px;
+  padding: 10px;
+  transition: 0.4s;
+  box-sizing: border-box;
+}
+main #cetvrti_blok #kontakt #forma button:hover {
+  background-color: #f0aa4f;
+  cursor: pointer;
+}
+main footer {
+  height: 200px;
+  background-color: #121212;
+}
+main footer p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+}
+main footer #ikonice {
+  text-align: center;
+}
+main footer #ikonice i {
+  color: #fff;
+  margin-top: 50px;
+  padding: 0px 20px;
+  font-size: 26px;
 }/*# sourceMappingURL=style.css.map */

@@ -8,12 +8,22 @@
   main #drugi_blok #utisci #grid .utisci_blok p {
     font-size: 15px;
   }
+  main #treci_blok button {
+    position: relative;
+    top: 15%;
+    right: 36%;
+  }
   main #treci_blok #tooltip img {
     margin-left: 8%;
     width: 65%;
   }
 }
 @media screen and (max-width: 1788px) {
+  main #treci_blok button {
+    position: relative;
+    top: 15%;
+    right: 37%;
+  }
   main #drugi_blok #utisci #grid {
     width: 70%;
   }
@@ -53,6 +63,11 @@
   main #treci_blok {
     height: 650px;
   }
+  main #treci_blok button {
+    position: relative;
+    top: 15%;
+    right: 38%;
+  }
 }
 @media screen and (max-width: 1322px) {
   header nav ul li a {
@@ -64,7 +79,7 @@
 }
 @media screen and (max-width: 1199px) {
   header {
-    background-position: -230px;
+    background-position: -250px;
   }
   header nav ul li a {
     margin-left: 40px;
@@ -88,6 +103,13 @@
   main #treci_blok img {
     display: none;
   }
+  main #treci_blok button {
+    position: relative;
+    top: 70%;
+    left: 37%;
+    width: 280px;
+    height: 60px;
+  }
 }
 @media screen and (max-width: 1130px) {
   main #drugi_blok {
@@ -104,6 +126,9 @@
   }
   main #drugi_blok #utisci #grid .utisci_blok img {
     margin-left: 29%;
+  }
+  main #treci_blok button {
+    left: 36%;
   }
 }
 @media screen and (max-width: 1062px) {
@@ -131,6 +156,19 @@
   main #drugi_blok #utisci #grid .utisci_blok p {
     font-size: 16px;
   }
+  main #treci_blok button {
+    top: 68%;
+    left: 35%;
+  }
+  main #cetvrti_blok #kontakt #forma input, main #cetvrti_blok #kontakt #forma textarea {
+    width: 50%;
+  }
+  main #cetvrti_blok #kontakt #forma #imeiprezime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 911px) {
   header nav ul li a {
@@ -147,6 +185,13 @@
   }
   main #prvi_blok #skills img {
     width: 250px;
+  }
+  main #treci_blok {
+    background-size: 75%;
+  }
+  main #treci_blok button {
+    top: 72%;
+    left: 34%;
   }
 }
 @media screen and (max-width: 828px) {
@@ -230,6 +275,24 @@
     padding: 0px;
     margin-top: 40px;
   }
+  main #treci_blok button {
+    width: 250px;
+    height: 50px;
+    top: 68%;
+  }
+  main #cetvrti_blok {
+    height: 1200px;
+  }
+  main #cetvrti_blok #kontakt {
+    flex-direction: column;
+  }
+  main #cetvrti_blok #kontakt #info .info i {
+    padding: 10px;
+  }
+  main #cetvrti_blok #kontakt #forma {
+    margin-top: 100px;
+    width: 75%;
+  }
 }
 @media screen and (max-width: 693px) {
   html, body {
@@ -245,6 +308,14 @@
   }
   main #prvi_blok hr {
     margin-bottom: 10px;
+  }
+  main #treci_blok {
+    height: 1000px;
+  }
+  main #treci_blok button {
+    width: 240px;
+    top: 60%;
+    left: 32%;
   }
 }
 @media screen and (max-width: 570px) {
@@ -270,6 +341,11 @@
   main #treci_blok hr {
     margin-bottom: 0px;
   }
+  main #treci_blok button {
+    top: 65%;
+    left: 32%;
+    width: 200px;
+  }
 }
 @media screen and (max-width: 500px) {
   html, body {
@@ -286,10 +362,29 @@
   main #prvi_blok #o-meni-tekst {
     margin-top: 10px;
   }
+  main #treci_blok {
+    height: 850px;
+  }
+  main #treci_blok button {
+    top: 68%;
+    left: 30%;
+  }
 }
 @media screen and (max-width: 447px) {
   main #prvi_blok #o-meni #tabela {
     margin-bottom: 40px;
+  }
+  main #treci_blok {
+    height: 700px;
+  }
+  main #treci_blok button {
+    left: 31%;
+    padding: 5px;
+    width: 150px;
+  }
+  footer {
+    height: 300px;
+    padding-bottom: 20px;
   }
 }
 @media screen and (max-width: 411px) {
@@ -355,5 +450,8 @@
   }
   main #prvi_blok #o-meni-tekst {
     width: 95%;
+  }
+  main #treci_blok button {
+    left: 28%;
   }
 }/*# sourceMappingURL=responsive.css.map */

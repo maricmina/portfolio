@@ -12,6 +12,7 @@
     }  
 }
 $zlatnaBoja: #b58240;
+$svetlijaZlatna: #f0aa4f;
 @mixin pozicija {
     display: flex;
     align-items: center;
@@ -35,18 +36,18 @@ $zlatnaBoja: #b58240;
     align-items: center;
     justify-content: center;
 }
-a {
-    text-decoration: none;
-    color: #fff;
-}
 html {
     scroll-behavior: smooth;
 }
 body{
     overflow-x: hidden;
 }
+a {
+    text-decoration: none;
+    color: #fff;
+}   
 header {  
-    height: 715px;
+    height: 755px;
     background-image: url('../images/pozadina1.gif');
     padding-top: 30px;
     #meni {
@@ -226,7 +227,6 @@ main {
     }
     #treci_blok {
         background-color: #121212;
-        width: 100%;
         height: 750px;
         h1 {
             @include h1;
@@ -244,6 +244,104 @@ main {
             left: 10%;
             transition: 2s;
             animation: 2s;
+        }
+        button {
+            width: 200px;
+            height: 50px;
+            background-color: $zlatnaBoja;
+            border: 1px solid $zlatnaBoja;
+            color: #fff;
+            padding: 10px;
+            position: relative;
+            top: 25%;
+            right: 37%;
+            transition: 0.4s;
+        }
+        button:hover {
+            background-color: $svetlijaZlatna;
+            cursor: pointer;
+        }
+    }
+    #cetvrti_blok {
+        height: 750px;
+        background-color: #1f1f1f;
+        h1 {
+            padding-top: 80px;
+        }
+        #kontakt {
+            @include pozicija;
+            justify-content: space-evenly;
+                #info, #forma {
+                    width: 45%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                #info .info {
+                    height: 110px;
+                    text-align: center;
+                    color: #fff;
+                        i {
+                            color: $zlatnaBoja;
+                            font-size: 30px;
+                            padding: 20px;
+                        }
+                    }
+                #forma {
+                    width: 40%;
+                    input, textarea {                    
+                        border: none;
+                        margin: 10px 0px;
+                        padding: 5px;
+                        border-bottom: 2px solid $zlatnaBoja;
+                        background-color: transparent;
+                        width: 70%;
+                        box-sizing: border-box;
+                        transition: 0.4s;
+                    }
+                    input:hover, textarea:hover {
+                        border-bottom: 2px solid $svetlijaZlatna;
+                    }
+                    #imeiprezime {
+                        width: 70%;
+                        box-sizing: border-box;
+                        input {
+                            width: 49%;
+                        }
+                    }
+                    button {
+                        width: 35%;
+                        background-color: $zlatnaBoja;
+                        border: none;
+                        color: #fff;
+                        margin-top: 10px;
+                        padding: 10px;
+                        transition: 0.4s;
+                        box-sizing: border-box;
+                    }
+                    button:hover {
+                        background-color: $svetlijaZlatna;
+                        cursor: pointer;
+                    }
+                }
+        }
+    }
+    footer {
+        height: 200px;
+        background-color: #121212;
+        p {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 18px;
+        }
+        #ikonice {
+            text-align: center;
+            i {
+                color: #fff;
+                margin-top: 50px;
+                padding: 0px 20px;
+                font-size: 26px;
+            }
         }
     }
 }

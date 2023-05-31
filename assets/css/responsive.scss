@@ -9,28 +9,44 @@
                 }
             }
         }
-        #treci_blok #tooltip {
-            img {
-                margin-left: 8%;
-                width: 65%;
+        #treci_blok {
+            button {
+                position: relative;
+                top: 15%;
+                right: 36%;
+            }
+            #tooltip {
+                img {
+                    margin-left: 8%;
+                    width: 65%;
+                }
             }
         }
     }
 }
 @media screen and (max-width: 1788px) {
-    main #drugi_blok #utisci #grid {
-        width: 70%;
-    }
+    main { 
+        #treci_blok button {
+            position: relative;
+            top: 15%;
+            right: 37%;
+        }
+        #drugi_blok #utisci #grid {
+            width: 70%;
+        }
+    } 
 }
 @media screen and (max-width: 1570px) {
-    main #drugi_blok #utisci #grid  {
-        width: 80%;
-            h2 {
-                font-size: 20px;
-            }
-            p {
-                font-size: 14px;
-            }
+    main {
+        #drugi_blok #utisci #grid  {
+            width: 80%;
+                h2 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 14px;
+                }
+        }   
     }
 }
 @media screen and (max-width: 1399px) {
@@ -57,6 +73,11 @@
         }
         #treci_blok {
             height: 650px;
+            button {    
+                position: relative;
+                top: 15%;
+                right: 38%;
+            }
         }
     }
 }
@@ -73,7 +94,7 @@
 @media screen and (max-width: 1199px) {
     header  {
         background: {
-            position: -230px;
+            position: -250px;
         }
         nav ul li a {
             margin-left: 40px;
@@ -100,29 +121,42 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: 60%;
+            button {    
+                position: relative;
+                top: 70%;
+                left: 37%;
+                width: 280px;
+                height: 60px;
+            }
         }
     }
-
 }
 @media screen and (max-width: 1130px) {
-    main #drugi_blok {
-        height: 1200px;
-        #utisci #grid {
-            grid-template-columns: 40% 40%;
-            .utisci_blok {
-                h2 {
-                    font-size: 24px;
-                }
-                p {
-                    font-size: 18px;
-                }
-                img {
-                    margin-left: 29%;
-                }
+    main {
+        #drugi_blok {
+            height: 1200px;
+            #utisci #grid {
+                grid-template-columns: 40% 40%;
+                .utisci_blok {
+                    h2 {
+                        font-size: 24px;
+                    }
+                    p {
+                        font-size: 18px;
+                    }
+                    img {
+                        margin-left: 29%;
+                    }
+                 }
              }
-         }
+            }
+        #treci_blok {
+            button {    
+                left: 36%;
+            }
         }
     }
+}
 @media screen and (max-width: 1062px) {
     header #logo, header #navigacija {
         width: 47%;
@@ -141,34 +175,60 @@
     header {
         background-image: url('../images/poz3.gif');
     }
-    main #o-meni #skills {
-        height: 250px;
-    }
-    main #drugi_blok #utisci #grid .utisci_blok {
-        margin: 0px 10px;
-        p {
-            font-size: 16px;
+    main {
+        #o-meni #skills {
+            height: 250px;
+        } 
+        #drugi_blok #utisci #grid .utisci_blok {
+            margin: 0px 10px;
+            p {
+                font-size: 16px;
+            }
+        }
+        #treci_blok button {   
+                top: 68%;
+                left: 35%;
+        }
+        #cetvrti_blok #kontakt #forma {
+                input, textarea {                    
+                    width: 50%;
+                }
+                #imeiprezime {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                }
+            }
         }
     }
-}
 @media screen and (max-width: 911px) {
     header nav ul li a {
         margin-left: 20px;
     }
-    main #prvi_blok {
-        #o-meni-tekst {
-            width: 60%;
-        }
-        p {
-            font-size: 16px;
-        }
-        #skills {
-            height: 200px;
-            img {
-                width: 250px;
+    main {
+        #prvi_blok {
+            #o-meni-tekst {
+                width: 60%;
+            }
+            p {
+                font-size: 16px;
+            }
+            #skills {
+                height: 200px;
+                img {
+                    width: 250px;
+                    }
+                }
+            }
+        #treci_blok {
+            background-size: 75%;
+            button {
+                top: 72%;
+                left: 34%;
             }
         }
-    }
+    }      
 }
 @media screen and (max-width: 828px) {
     header #logo, header #navigacija {
@@ -260,25 +320,55 @@
                 margin-top: 40px;
             }
         }
+        #treci_blok button {
+            width: 250px;
+            height: 50px;
+            top: 68%;
+        }
+        #cetvrti_blok {
+            height: 1200px;
+            #kontakt {
+                flex-direction: column;
+                #info .info i {
+                    padding: 10px; 
+                }
+                #forma {
+                    margin-top: 100px;
+                    width: 75%;
+                }
+            }
+        }
     } 
 }
 @media screen and (max-width: 693px) {
     html, body {
         overflow-x: hidden;
     }
-    main #prvi_blok {
-        #tabela {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
+    main {
+        #prvi_blok {
+            #tabela {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
             #prvi_deo {
                 float: left;
+                }
+            }
+            hr {
+                margin-bottom: 10px;
             }
         }
-        hr {
-            margin-bottom: 10px;
+        #treci_blok {
+            height: 1000px;
+            button {
+                width: 240px;
+                top: 60%;
+                left: 32%;
+            }
         }
     }
+    
+        
 }
 @media screen and (max-width: 570px) {
     header #logo {
@@ -307,6 +397,11 @@
             hr {
                 margin-bottom: 0px;
             }
+            button {
+                top: 65%;
+                left: 32%;
+                width: 200px;
+            }
         }
     }
 }
@@ -322,13 +417,36 @@
         position: relative;
         left: 8%;
     }
-    main #prvi_blok #o-meni-tekst {
-        margin-top: 10px;
-    }
+    main {
+        #prvi_blok #o-meni-tekst {
+            margin-top: 10px;
+        }
+        #treci_blok {
+            height: 850px;
+            button {
+                top: 68%;
+                left: 30%;
+            }
+        }
+    }  
 }
 @media screen and (max-width: 447px) {
-    main #prvi_blok #o-meni #tabela {
-        margin-bottom: 40px;
+    main {
+        #prvi_blok #o-meni #tabela {
+            margin-bottom: 40px;
+        }
+        #treci_blok {
+            height: 700px;
+            button {
+                left: 31%;
+                padding: 5px;
+                width: 150px;
+            } 
+        }
+    }
+    footer {
+        height: 300px;
+        padding-bottom: 20px;;
     }
 }
 @media screen and (max-width: 411px) {
@@ -392,7 +510,12 @@
                     font-size: 16px;
                 }
             }
-            main #prvi_blok #o-meni-tekst {
-                width: 95%;
+            main {
+                #prvi_blok #o-meni-tekst {
+                    width: 95%;
+                }
+                #treci_blok button {
+                    left: 28%;
+                }
             }
     }
